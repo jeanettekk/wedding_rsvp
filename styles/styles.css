@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
+body    {
+    background-color:#F8F5F2;
+}
+
+#left_container {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+}
+
+#main_text {
+    position: absolute;
+    top: 7%;
+    left: 40%;
+}
+
+h1  {
+    color: white;
+    font-family: 'Sacramento', cursive;
+    font-size: 4em;
+}
+
+h2  {
+    color: black;
+    font-family: 'Sacramento', cursive;
+    font-size: 2em;
+    top: 40%;
+    position: relative;
+}
+
+p {
+    top: 40%;
+    position: relative;
+}
+
+#news {
+    color: white;
+}
+
+#main_couple {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+/* vh stands for viewport height. It makes this image the height of the device */
+/* object-fit: cover, this attribute maintains the image's aspect ratio, but covers all available space */
+
+.btn-primary {
+    --bs-btn-color:#BC8034;
+    --bs-btn-bg: none;
+    --bs-btn-border-color:#BC8034;
+    --bs-btn-hover-bg:#BC8034;
+    --bs-btn-hover-border-color: none;
+}
+
+.rsvp_btn {
+    position: relative;
+    top: 40%;
+}
