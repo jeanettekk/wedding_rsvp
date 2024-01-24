@@ -13,7 +13,7 @@ body    {
 
 #main_text {
     position: absolute;
-    top: 7%;
+    top: 4%;
     left: 40%;
 }
 
@@ -27,12 +27,12 @@ h2  {
     color: black;
     font-family: 'Sacramento', cursive;
     font-size: 2em;
-    top: 40%;
+    top: 30%;
     position: relative;
 }
 
 p {
-    top: 40%;
+    top: 30%;
     position: relative;
 }
 
@@ -54,9 +54,10 @@ p {
     --bs-btn-border-color:#BC8034;
     --bs-btn-hover-bg:#BC8034;
     --bs-btn-hover-border-color: none;
+    width: 75%;
 }
 
 .rsvp_btn {
     position: relative;
-    top: 40%;
+    top: 30%;
 }

@@ -19,11 +19,12 @@
                     <h1>Ramona &<br> Christian</h1>
                     <p id="news">We're getting married!</p>
                 </div>
-                <img id="main_couple" src="images/couple.jpg" alt="engaged couple">
+                <img id="main_couple" src="images/couple.jpg" alt="an engaged couple" title="We're getting married!">
             </div>
         </div>
         <div class="col-4 text-center">
             <h2>Los Angeles California</h2>
+            <br>
             <p id="display_wedding_date"></p>
             <p id="count_down"></p>
             <script>
@@ -32,37 +33,36 @@
                 // stored a date in the timestamp of milliseconds (.getTime()) in the wedding_date variable
                 
                 var display_date = new Date(wedding_date);
-                var options = { weekday: 'long', month: 'long', day: 'numeric', year: 'numeric' };
-                var formattedDateString = display_date.toLocaleDateString('en-US', options);
+                var optionsDate = { weekday: 'long', month: 'long', day: 'numeric', year: 'numeric' };
+                var dateReferenceString = display_date.toLocaleDateString('en-US', optionsDate);
                 // stores the wedding date inside display_date variable
                 // the variable options is storing the configuration settings for the toLocaleDateString method
                 // the toLocaleDateString is responsible for formatting the date string
 
-                document.getElementById("display_wedding_date").innerHTML = formattedDateString;
-                // changes the string of this id to the string in formattedDateString
+                document.getElementById("display_wedding_date").innerHTML = dateReferenceString
+                // changes the string of this id to the string in this variable
 
                 var update_count_down = setInterval(function() {
                 // setInterval repeatedly calls a function and updates the countdown every 1 second
+
                     var now = new Date().getTime();
                     // Get today's date and time
                     var distance = wedding_date - now;
                     // Find the difference from now until the wedding date in milliseconds
 
-                    // Time calculations for days, hours, minutes and seconds
+                    // Time calculations for days and hours
                     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
                     var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-                    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-                        
+
                     // Output the result in an element with id="count_down"
-                    document.getElementById("count_down").innerHTML = days + "d " + hours + "h "
-                    + minutes + "m " + seconds + "s ";
+                    document.getElementById("count_down").innerHTML = days + " Days | " + hours + " Hours ";
 
                 }, 1000);
                 // Call the function every 1000 milliseconds (1 second)
             </script>
+            <br>
             <div class="d-grid rsvp_btn">
-                <button class="btn btn-primary" type="button">RSVP</button>
+                <a href="rsvp.html"><button class="btn btn-primary" type="button">RSVP</button></a>      
             </div>
         </div>
     </div>
