@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Sacramento&display=swap');
 
 body    {
     background-color:#F8F5F2;
@@ -31,6 +31,11 @@ h2  {
     position: relative;
 }
 
+#h1_rsvp {
+    color: black;
+    font-family: arial;
+}
+
 p {
     top: 30%;
     position: relative;
@@ -61,3 +66,16 @@ p {
     position: relative;
     top: 30%;
 }
+
+a   {
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2em;
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #BC8034;
+}
+/* Display the a tags or links as a block element, makes the links take up the whole width */
