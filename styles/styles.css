@@ -74,6 +74,7 @@ a   {
     color: white;
     text-decoration: none;
 }
+/* text-decoration: none; removed the underline from the nav links */
 
 a:hover {
     color: #BC8034;
