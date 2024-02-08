@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Sacramento&display=swap');
 
+/* Colours: #FB732E, #D33866, #782443, #FCA445 */
+
 .main_background {
     background-color:#F19953;
     height: 100vh;
@@ -12,13 +14,13 @@
 
 .welcome_bar {
     height: 80px;
-    background-color:#FF571F;
+    background-color:#FB732E;
     bottom: 0px;
 }
 
 .info_bar {
     height: 180px;
-    background-color: #e0008a;
+    background-image: linear-gradient(to top right, #782443, #D33866);
     float: bottom;
 }
 
@@ -38,7 +40,7 @@
 h1  {
     color: white;
     font-family: 'Sacramento', cursive;
-    font-size: 4em;
+    font-size: 3em;
 }
 
 h2  {
